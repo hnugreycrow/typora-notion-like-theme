@@ -630,8 +630,7 @@ ner .cm-variable-3 {
 
 #write table th,
 #write table td {
-    border: none;
-    border-bottom: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-subtle);
     padding: 0.55em 0.85em;
     text-align: left;
     vertical-align: middle;

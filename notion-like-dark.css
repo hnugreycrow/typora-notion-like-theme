@@ -22,8 +22,8 @@
     --sidebar-font-color: #c4c4c4;
 
     /* 边框 */
-    --border-color: #2e2e2e;
-    --border-subtle: #262626;
+    --border-color: #383836;
+    --border-subtle: #383836;
     --hr-color: #2e2e2e;
 
     /* 强调色 */
@@ -531,8 +531,7 @@ body {
 
 #write table th,
 #write table td {
-    border: none;
-    border-bottom: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-subtle);
     padding: 0.55em 0.85em;
     text-align: left;
     vertical-align: middle;
