@@ -866,6 +866,11 @@ mark {
     margin-right: 8px;
 }
 
+/* 文件节点不需要展开箭头，移除 Typora 保留的空占位 */
+.file-library-node.file-library-file-node > .file-node-content > .file-node-open-state {
+    display: none !important;
+}
+
 /*
  * 目录图标切换
  * DOM：.file-node-open-state（展开箭头）+ .file-node-icon.fa-folder
@@ -874,7 +879,7 @@ mark {
  * 悬停时用 inline-flex（不要用 inline-block），箭头才能居中。
  */
 .file-library-node[data-is-directory="true"] > .file-node-content > .file-node-open-state,
-.file-library-node[data-is-directory="true"] > .file-node-content > .file-node-icon.fa-folder {
+.file-library-node > .file-node-content > .file-node-icon {
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
@@ -904,13 +909,21 @@ mark {
 }
 
 /* 悬停：在同一槽位显示箭头 */
-.file-library-node[data-is-directory="true"] > .file-node-content:hover > .file-node-open-state {
+.file-library-node[data-is-directory="true"]:not([data-has-sub="false"]) > .file-node-content:hover > .file-node-open-state {
     display: inline-flex !important;
 }
 
 /* 悬停：隐藏文件夹图标（根节点除外） */
-.file-library-node:not(.file-node-root)[data-is-directory="true"] > .file-node-content:hover > .file-node-icon.fa-folder {
+.file-library-node:not(.file-node-root)[data-is-directory="true"]:not([data-has-sub="false"]) > .file-node-content:hover > .file-node-icon.fa-folder {
     display: none !important;
+}
+
+/* 没有可显示子项的目录使用变淡的空心文件夹图标 */
+.file-library-node:not(.file-node-root)[data-is-directory="true"][data-has-sub="false"]
+    > .file-node-content
+    > .file-node-icon.fa-folder:before {
+    content: "\f114";
+    opacity: 0.5;
 }
 
 
