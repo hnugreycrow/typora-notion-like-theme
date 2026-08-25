@@ -109,11 +109,25 @@ body {
 
 /* 写作区 */
 #write {
-    max-width: 720px;
+    width: 100%;
+    max-width: 760px;
     margin: 0 auto;
     padding: 28px 28px 120px;
-    width: 100%;
     caret-color: var(--accent);
+}
+
+/* 较窄窗口 */
+@media screen and (max-width: 768px) {
+    #write {
+        padding-inline: 20px;
+    }
+}
+
+/* 超宽屏：只略微增加宽度 */
+@media screen and (min-width: 1600px) {
+    #write {
+        max-width: 820px;
+    }
 }
 
 #write h1,
