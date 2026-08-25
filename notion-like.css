@@ -615,7 +615,6 @@ ner .cm-variable-3 {
 #write .md-table-fig {
     margin: 1em 0 1.25em;
     border: 1px solid var(--border-color);
-    border-radius: 10px;
     background: var(--card-bg);
     box-shadow: var(--shadow-sm);
 }
@@ -661,13 +660,6 @@ ner .cm-variable-3 {
     max-height: 1.35em;
     width: auto;
     vertical-align: middle;
-}
-
-#write .ty-table-edit {
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: var(--shadow-md);
 }
 
 /* =========================================
@@ -1411,43 +1403,6 @@ footer.ty-footer {
     background: var(--accent-soft);
     color: var(--accent-hover);
 }
-
-/* =========================================
-   源码模式
-   ========================================= */
-
-#typora-source .CodeMirror,
-#typora-source {
-    background: var(--bg-color);
-    color: var(--font-color);
-    font-family: var(--monospace);
-    font-size: 0.9rem;
-    line-height: 1.55;
-}
-
-.cm-s-typora-default .cm-header {
-    color: var(--font-color);
-    font-weight: 650;
-}
-
-.cm-s-typora-default .cm-link {
-    color: var(--accent);
-}
-
-.cm-s-typora-default .cm-comment,
-.cm-s-typora-default .cm-code {
-    color: #6e7781;
-}
-
-.cm-s-typora-default .cm-string {
-    color: #0a3069;
-}
-
-.cm-s-typora-default .cm-atom,
-.cm-s-typora-default .cm-tag {
-    color: #116329;
-}
-
 /* CodeMirror 用 border-left 画光标（默认黑色）。
    需要比 Typora/CodeMirror 默认更高的优先级。 */
 .CodeMirror div.CodeMirror-cursor {
@@ -1460,204 +1415,6 @@ footer.ty-footer {
     caret-color: var(--accent);
 }
 
-.CodeMirror-selected,
-.CodeMirror-selectedtext {
-    background: var(--select-text-bg-color);
-}
-
-/* =========================================
-   公式 / 图表
-   ========================================= */
-
-.md-math-block:hover .md-math-container,
-.md-inline-math.md-expand {
-    background: var(--hover-color);
-    border-radius: 6px;
-}
-
-.md-rawblock-control {
-    background: var(--pre-bg);
-    border-radius: 8px;
-}
-
-.md-diagram-panel {
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-}
-
-/* =========================================
-   偏好设置 / 对话框
-   ========================================= */
-
-.modal-content,
-.ty-preferences {
-    background: var(--bg-elevated);
-    color: var(--font-color);
-    border-radius: 12px;
-}
-
-input,
-textarea,
-select,
-.form-control {
-    font-family: var(--font-sans);
-}
-
-.btn-primary {
-    background: var(--accent);
-    border-color: var(--accent);
-}
-
-.btn-primary:hover {
-    background: var(--accent-hover);
-    border-color: var(--accent-hover);
-}
-
-/* =========================================
-   打印 / 导出
-   ========================================= */
-
-@media print {
-    #write {
-        max-width: 100%;
-        padding: 0;
-    }
-
-    #write blockquote {
-        border-left: 4px solid #d0d7de;
-        color: #6b6b6b;
-        background: transparent;
-    }
-
-    .md-fences {
-        border: 1px solid #ccc;
-    }
-}
-
-/* =========================================
-   专注模式与细节打磨
-   ========================================= */
-
-.typora-focus-mode #write > *:not(.md-focus):not(.md-focus-container) {
-    opacity: 0.35;
-    transition: opacity 0.2s ease;
-}
-
-#write .md-focus,
-#write .md-focus-container {
-    opacity: 1;
-}
-
-/* 底部柔和渐隐，类似聊天 Composer 留白 */
-.content {
-    background: var(--bg-color);
-}
-
-#write {
-    position: relative;
-}
-
-/* 行内提示 / Tooltip 打磨 */
-.code-tooltip.md-tooltip-hide {
-    display: none;
-}
-
-.popover {
-    border-radius: 10px !important;
-    border: 1px solid var(--border-color) !important;
-    box-shadow: var(--shadow-md) !important;
-    background: var(--bg-elevated) !important;
-}
-
-/* =========================================
-   底栏 + 侧边栏卡片
-   ========================================= */
-
-/* 侧边栏面板 */
-.os-windows #typora-sidebar,
-.typora-node #typora-sidebar {
-    border-right: 1px solid var(--border-color);
-}
-
-.show-footer footer.ty-footer {
-    height: 28px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-top: 1px solid var(--border-subtle);
-    color: var(--text-muted);
-    font-size: 12px;
-}
-
-.footer-item {
-    opacity: 0.72;
-    transition: opacity 0.15s ease, background 0.15s ease;
-}
-
-.footer-item:hover {
-    opacity: 1;
-    background: var(--hover-color);
-    border-radius: 6px;
-}
-
-/* 字数统计 / 溢出菜单 */
-#footer-word-count-info,
-#spell-check-panel {
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-md);
-}
-
-/* 表格 / 正文中的 Diff 着色辅助 */
-#write table td strong {
-    font-weight: 600;
-}
-
-#write .md-table-fig::before {
-    content: none;
-}
-
-/* 分隔条拖拽 */
-#typora-sidebar-resizer:hover .typora-sidebar-resizer-bar {
-    background: var(--accent);
-    opacity: 0.45;
-}
-
-/* 快速打开（Ctrl+P） */
-#typora-quick-open {
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(18px);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    box-shadow: var(--shadow-md);
-}
-
-#typora-quick-open input {
-    border: none;
-    background: transparent;
-    font-family: var(--font-sans);
-    font-size: 0.95rem;
-}
-
-.ty-quick-open-item.active,
-.ty-quick-open-item:hover {
-    background: var(--hover-color);
-    border-radius: 6px;
-}
-
-/* 通知 Toast */
-#md-notification {
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    box-shadow: var(--shadow-md);
-    color: var(--font-color);
-}
-
-#write code {
-    font-feature-settings: "tnum";
-}
 
 /* =========================================
    浮动编辑工具栏（浅色）

@@ -518,7 +518,6 @@ body {
 #write .md-table-fig {
     margin: 1em 0 1.25em;
     border: 1px solid var(--border-color);
-    border-radius: 10px;
     background: var(--card-bg);
     box-shadow: var(--shadow-sm);
 }
@@ -1102,21 +1101,6 @@ footer.ty-footer {
     background: var(--accent-soft);
 }
 
-#typora-source .CodeMirror,
-#typora-source {
-    background: var(--bg-color);
-    color: var(--font-color);
-    font-family: var(--monospace);
-}
-
-.cm-s-typora-default .cm-header {
-    color: var(--font-color);
-}
-
-.cm-s-typora-default .cm-link {
-    color: var(--accent);
-}
-
 /* CodeMirror 用 border-left 画光标（默认黑色）。
    需要比 Typora/CodeMirror 默认更高的优先级。 */
 .CodeMirror div.CodeMirror-cursor {
@@ -1127,10 +1111,6 @@ footer.ty-footer {
 .md-fences .CodeMirror,
 .md-fences .CodeMirror textarea {
     caret-color: var(--accent);
-}
-
-.CodeMirror-selected {
-    background: var(--select-text-bg-color);
 }
 
 .md-rawblock-control {
@@ -1152,6 +1132,10 @@ footer.ty-footer {
     background: var(--accent);
     border-color: var(--accent);
     color: #0d1117;
+}
+
+#toggle-sourceview-btn {
+    background: transparent !important;
 }
 
 /* =========================================
