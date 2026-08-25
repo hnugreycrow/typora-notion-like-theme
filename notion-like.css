@@ -1552,81 +1552,6 @@ select,
 }
 
 .popover {
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-md);
-    background: var(--bg-elevated);
-lor);
-    border-radius: 12px;
-}
-
-input,
-textarea,
-select,
-.form-control {
-    font-family: var(--font-sans);
-}
-
-.btn-primary {
-    background: var(--accent);
-    border-color: var(--accent);
-}
-
-.btn-primary:hover {
-    background: var(--accent-hover);
-    border-color: var(--accent-hover);
-}
-
-/* =========================================
-   打印 / 导出
-   ========================================= */
-
-@media print {
-    #write {
-        max-width: 100%;
-        padding: 0;
-    }
-
-    #write blockquote {
-        border-left: 4px solid #d0d7de;
-        color: #6b6b6b;
-        background: transparent;
-    }
-
-    .md-fences {
-        border: 1px solid #ccc;
-    }
-}
-
-/* =========================================
-   专注模式与细节打磨
-   ========================================= */
-
-.typora-focus-mode #write > *:not(.md-focus):not(.md-focus-container) {
-    opacity: 0.35;
-    transition: opacity 0.2s ease;
-}
-
-#write .md-focus,
-#write .md-focus-container {
-    opacity: 1;
-}
-
-/* 底部柔和渐隐，类似聊天 Composer 留白 */
-.content {
-    background: var(--bg-color);
-}
-
-#write {
-    position: relative;
-}
-
-/* 行内提示 / Tooltip 打磨 */
-.code-tooltip.md-tooltip-hide {
-    display: none;
-}
-
-.popover {
     border-radius: 10px !important;
     border: 1px solid var(--border-color) !important;
     box-shadow: var(--shadow-md) !important;
@@ -1680,7 +1605,6 @@ select,
 #write .md-table-fig::before {
     content: none;
 }
-
 
 /* 分隔条拖拽 */
 #typora-sidebar-resizer:hover .typora-sidebar-resizer-bar {
