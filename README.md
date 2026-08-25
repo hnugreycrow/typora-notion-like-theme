@@ -1,6 +1,6 @@
 # Notion Like — Typora 主题
 
-一套贴近 [Notion](https://www.notion.so) 阅读体验的 Typora 主题，提供浅色与深色两套样式。
+一套贴近 Notion 阅读体验的 Typora 主题，提供浅色与深色两套样式。
 
 ## 预览
 
