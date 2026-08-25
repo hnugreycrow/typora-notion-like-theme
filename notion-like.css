@@ -614,7 +614,6 @@ ner .cm-variable-3 {
 
 #write .md-table-fig {
     margin: 1em 0 1.25em;
-    overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: 10px;
     background: var(--card-bg);
