@@ -47,7 +47,7 @@
     --pre-border: #30363d;
     --pre-header: #8b949e;
 
-    /* 引用 */
+    /* 引用块 */
     --quote-bg: transparent;
     --quote-fg: #9ca3af;
     --quote-border: #3d444d;
@@ -76,10 +76,12 @@
     --font-weight: 400;
     --font-strong: 600;
 
+    /* 阴影 */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
     --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04);
     --shadow-input: 0 10px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
 
+    /* 滚动条 */
     --scrollbar-color: rgba(255, 255, 255, 0.14);
     --scrollbar-hover: rgba(255, 255, 255, 0.28);
 }
@@ -107,7 +109,10 @@ body {
     color: var(--select-text-font-color);
 }
 
-/* 写作区 */
+/* =========================================
+   写作区
+   ========================================= */
+
 #write {
     width: 100%;
     max-width: 760px;
@@ -129,6 +134,8 @@ body {
         max-width: 820px;
     }
 }
+
+/* ----- 标题 ----- */
 
 #write h1,
 #write h2,
@@ -178,6 +185,8 @@ body {
     line-height: 1.7;
 }
 
+/* ----- 链接 ----- */
+
 #write a {
     color: var(--accent);
     text-decoration: none;
@@ -187,6 +196,8 @@ body {
     color: var(--accent-hover);
     border-bottom: 1px solid var(--accent-hover);
 }
+
+/* ----- 列表 ----- */
 
 #write ul,
 #write ol {
@@ -253,6 +264,8 @@ body {
     text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
+/* ----- 分隔线 ----- */
+
 #write hr {
     border: none;
     height: 1px;
@@ -260,7 +273,10 @@ body {
     margin: 1.5em 0;
 }
 
-/* 用户气泡 */
+/* =========================================
+   引用块 — 经典 Markdown 左侧竖线
+   ========================================= */
+
 #write blockquote {
     margin: 1em 0;
     padding: 0.15em 0 0.15em 1em;
@@ -296,7 +312,10 @@ body {
     border-left-color: #656d76;
 }
 
-/* 行内代码 */
+/* =========================================
+   行内代码
+   ========================================= */
+
 #write code,
 #write tt {
     font-family: var(--monospace);
@@ -321,7 +340,10 @@ body {
     color: var(--font-color);
 }
 
-/* 代码块 */
+/* =========================================
+   代码块
+   ========================================= */
+
 .CodeMirror-gutters {
     border: none;
     background: transparent;
@@ -348,7 +370,7 @@ body {
     color: var(--text-muted);
 }
 
-/* 代码块顶栏背景 */
+/* 代码块顶栏背景（始终显示） */
 .md-fences::after {
     content: "";
     position: absolute;
@@ -361,6 +383,7 @@ body {
     z-index: 1;
 }
 
+/* 静态语言标签共用样式 */
 .md-fences::before {
     position: absolute;
     top: 0;
@@ -379,11 +402,13 @@ body {
     visibility: visible;
 }
 
+/* 有语言名时显示语言 */
 .md-fences[lang]:not([lang=""])::before {
     content: attr(lang);
     color: var(--pre-header);
 }
 
+/* 无语言名时显示占位提示 */
 .md-fences:not([lang])::before,
 .md-fences[lang=""]::before {
     content: "代码语言";
@@ -454,6 +479,7 @@ body {
     min-width: 11em;
 }
 
+/* 编辑空语言名时保持 Typora 输入框占位符可见 */
 .md-fences .code-tooltip .ty-input::placeholder,
 .md-fences .code-tooltip .ty-input::-webkit-input-placeholder {
     color: var(--text-muted);
@@ -514,7 +540,10 @@ body {
     color: #f85149;
 }
 
-/* 表格 */
+/* =========================================
+   表格
+   ========================================= */
+
 #write .md-table-fig {
     margin: 1em 0 1.25em;
     border: 1px solid var(--border-color);
@@ -561,6 +590,10 @@ body {
     vertical-align: middle;
 }
 
+/* =========================================
+   YAML front matter
+   ========================================= */
+
 #write pre.md-meta-block {
     background: #1a1a1a;
     border: 1px solid var(--border-color);
@@ -571,6 +604,10 @@ body {
     color: var(--text-secondary);
     margin-bottom: 1.4em;
 }
+
+/* =========================================
+   目录 / 脚注 / 图片
+   ========================================= */
 
 .md-toc {
     margin: 1em 0;
@@ -592,6 +629,10 @@ mark {
     border-radius: 2px;
 }
 
+/* =========================================
+   滚动条
+   ========================================= */
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -606,7 +647,10 @@ mark {
     background: var(--scrollbar-hover);
 }
 
-/* 侧边栏 */
+/* =========================================
+   侧边栏
+   ========================================= */
+
 #typora-sidebar {
     background: var(--sidebar-bg);
     border-right: 1px solid var(--border-color);
@@ -760,6 +804,7 @@ mark {
     background: rgba(255, 255, 255, 0.06);
 }
 
+/* 文件列表 */
 .file-list-item {
     border-bottom: none;
     border-radius: 8px;
@@ -775,11 +820,19 @@ mark {
     color: var(--font-color);
 }
 
+.file-list-item-file-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .file-list-item-summary {
     font-size: 0.8rem;
 }
 
-/* 文件树 — 关闭 Typora 的 table/横向滚动，让省略号生效 */
+/* 文件树
+   Typora 默认用 display:table + overflow-x:auto，长文件名会撑开并横向滚动，
+   导致省略号失效。改为裁切的列布局。 */
 #file-library {
     width: 100%;
     max-width: 100% !important;
@@ -923,12 +976,6 @@ mark {
     opacity: 0.5;
 }
 
-
-.file-node-icon {
-    opacity: 0.65;
-    margin-right: 8px;
-}
-
 .file-node-title,
 .allow-file-tree-scroll .file-node-title,
 .file-node-content > .file-node-title {
@@ -948,6 +995,16 @@ mark {
     display: inline !important;
 }
 
+.file-node-icon {
+    opacity: 0.65;
+    margin-right: 8px;
+}
+
+.file-node-title-ext-part {
+    display: none !important;
+}
+
+/* 清除 Typora 节点背景，仅高亮鼠标所在行 */
 .file-tree-node > .file-node-background,
 .file-tree-node:not(.file-node-root):hover > .file-node-background,
 .file-tree-node.active > .file-node-background {
@@ -969,10 +1026,6 @@ mark {
     background: var(--hover-color);
 }
 
-.file-node-title-ext-part {
-    display: none !important;
-}
-
 #file-library-tree > .file-tree-node.file-node-root > .file-node-content {
     letter-spacing: 0.04em;
 }
@@ -981,12 +1034,7 @@ mark {
     background: transparent;
 }
 
-.file-list-item-file-name {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
+/* 大纲 */
 .outline-content ul {
     list-style: none;
 }
@@ -1018,11 +1066,13 @@ mark {
     text-decoration: none;
 }
 
+/* 侧边栏底栏 */
 #ty-sidebar-footer {
     background: var(--sidebar-bg);
     border-top: 1px solid var(--border-subtle);
 }
 
+/* 侧边栏搜索 */
 #file-library-search-input {
     background: var(--bg-elevated);
     border: 1px solid var(--border-color);
@@ -1034,12 +1084,17 @@ mark {
     border-color: var(--accent);
 }
 
+/* =========================================
+   底栏与浮动工具栏 — Composer 输入条风格
+   ========================================= */
+
 footer.ty-footer {
     background: transparent;
     border-top: none;
     color: var(--text-muted);
 }
 
+/* 快速打开 / 搜索面板 */
 #md-searchpanel {
     background: rgba(28, 28, 28, 0.94);
     backdrop-filter: blur(16px);
@@ -1055,6 +1110,7 @@ footer.ty-footer {
     color: var(--font-color);
 }
 
+/* 右键菜单 */
 #context-menu,
 .dropdown-menu,
 .auto-suggest-container {
@@ -1077,6 +1133,10 @@ footer.ty-footer {
 .dropdown-menu > li > a:hover {
     background: var(--hover-color);
 }
+
+/* =========================================
+   Unibody 大菜单
+   ========================================= */
 
 .unibody-window #megamenu-menu-sidebar {
     background: var(--sidebar-bg);
@@ -1112,6 +1172,7 @@ footer.ty-footer {
     caret-color: var(--accent);
 }
 
+/* 编辑区与通用控件 */
 .md-rawblock-control {
     background: var(--pre-bg);
 }
@@ -1138,7 +1199,7 @@ footer.ty-footer {
 }
 
 /* =========================================
-   浮动编辑工具栏（深色）
+   浮动编辑工具栏
    ========================================= */
 
 .ty-editor-toolbar {
@@ -1282,6 +1343,7 @@ footer.ty-footer {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* 打印与图表 */
 @media print {
     html,
     body,

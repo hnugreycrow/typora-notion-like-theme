@@ -575,8 +575,8 @@ body {
 }
 
 .cm-s-inner .cm-variable,
-.cm-s-inn    opacity: 1;
-ner .cm-variable-3 {
+.cm-s-inner .cm-variable-2,
+.cm-s-inner .cm-variable-3 {
     color: #953800;
 }
 
@@ -1127,6 +1127,7 @@ mark {
     display: none !important;
 }
 
+/* 清除 Typora 节点背景，仅高亮鼠标所在行 */
 .file-tree-node:not(.file-node-root):hover > .file-node-background,
 .file-tree-node.active > .file-node-background {
     background: transparent;
@@ -1134,7 +1135,6 @@ mark {
     box-shadow: none;
 }
 
-/* 仅高亮鼠标所在行 */
 .file-tree-node > .file-node-content:hover {
     background: var(--hover-color);
 }
@@ -1160,6 +1160,7 @@ mark {
 }
 
 /* 大纲 */
+
 #outline-content,
 .outline-content {
     color: var(--sidebar-font-color);
@@ -1240,6 +1241,7 @@ mark {
 }
 
 /* 侧边栏搜索 */
+
 #file-library-search-input,
 #file-library-search-panel input {
     background: var(--bg-elevated);
@@ -1414,9 +1416,8 @@ footer.ty-footer {
     caret-color: var(--accent);
 }
 
-
 /* =========================================
-   浮动编辑工具栏（浅色）
+   浮动编辑工具栏
    ========================================= */
 
 .ty-editor-toolbar {
