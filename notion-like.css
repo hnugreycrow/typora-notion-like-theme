@@ -612,24 +612,24 @@ body {
    表格
    ========================================= */
 
-#write .md-table-fig {
+.md-table-fig {
+    width: max-content;
+    min-width: 100%;
+    max-width: max(100%, 55vw);
     margin: 1em 0 1.25em;
     border: 1px solid var(--border-color);
-    background: var(--card-bg);
-    box-shadow: var(--shadow-sm);
 }
 
-#write table {
+table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 1rem;
-    margin: 0 !important;
     border: none;
 }
 
-#write table th,
-#write table td {
+table th,
+table td{
     border: 1px solid var(--border-subtle);
     padding: 0.55em 0.85em;
     text-align: left;
@@ -638,7 +638,7 @@ body {
     font-size: 1rem;
 }
 
-#write table thead th {
+table thead th {
     background: #f7f6f3;
     font-weight: 600;
     font-size: 0.95rem;
@@ -647,15 +647,15 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
-#write table tbody tr:last-child td {
+table tbody tr:last-child td {
     border-bottom: none;
 }
 
-#write table tbody tr:hover td {
+table tbody tr:hover td {
     background: #f7f6f3;
 }
 
-#write table img {
+table img {
     max-height: 1.35em;
     width: auto;
     vertical-align: middle;
