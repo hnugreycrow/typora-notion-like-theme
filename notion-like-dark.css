@@ -5,109 +5,113 @@
  */
 
 :root {
-    /* 表面色 */
-    --bg-color: #191919;
-    --bg-elevated: #1c1c1c;
-    --sidebar-bg: #202020;
-    --hover-color: #2a2a2a;
-    --active-color: #333333;
-    --bubble-bg: #2a2a2a;
-    --card-bg: #1c1c1c;
+  /* 表面色 */
+  --bg-color: #191919;
+  --bg-elevated: #1c1c1c;
+  --sidebar-bg: #202020;
+  --hover-color: #2a2a2a;
+  --active-color: #333333;
+  --bubble-bg: #2a2a2a;
+  --card-bg: #1c1c1c;
 
-    /* 文字 */
-    --font-color: #deddda;
-    --text-color: #deddda;
-    --text-secondary: #a0a0a0;
-    --text-muted: #7a7a7a;
-    --sidebar-font-color: #c4c4c4;
+  /* 文字 */
+  --font-color: #deddda;
+  --text-color: #deddda;
+  --text-secondary: #a0a0a0;
+  --text-muted: #7a7a7a;
+  --sidebar-font-color: #c4c4c4;
 
-    /* 边框 */
-    --border-color: #383836;
-    --border-subtle: #383836;
-    --hr-color: #2e2e2e;
+  /* 边框 */
+  --border-color: #383836;
+  --border-subtle: #383836;
+  --hr-color: #2e2e2e;
 
-    /* 强调色 */
-    --accent: #60a5fa;
-    --accent-soft: rgba(96, 165, 250, 0.14);
-    --accent-hover: #93c5fd;
-    --focus-ring: rgba(96, 165, 250, 0.32);
-    --todo-checked-color: #1890ff;
-    --todo-border-color: #5a5a5a;
-    --todo-done-color: #6b6b6b;
+  /* 强调色 */
+  --accent: #60a5fa;
+  --accent-soft: rgba(96, 165, 250, 0.14);
+  --accent-hover: #93c5fd;
+  --focus-ring: rgba(96, 165, 250, 0.32);
+  --todo-checked-color: #1890ff;
+  --todo-border-color: #5a5a5a;
+  --todo-done-color: #6b6b6b;
 
-    /* Diff 增删色 */
-    --diff-add: #3fb950;
-    --diff-del: #f85149;
+  /* Diff 增删色 */
+  --diff-add: #3fb950;
+  --diff-del: #f85149;
 
-    /* 代码 */
-    --code-bg: rgba(135, 131, 120, .15);
-    --code-fg: #e6edf3;
-    --inline-code-fg: #EB5757;
-    --pre-bg: rgba(255, 255, 255, 0.03);
-    --pre-border: #30363d;
-    --pre-header: #8b949e;
+  /* 代码 */
+  --code-bg: rgba(135, 131, 120, 0.15);
+  --code-fg: #e6edf3;
+  --inline-code-fg: #eb5757;
+  --pre-bg: rgba(255, 255, 255, 0.03);
+  --pre-border: #30363d;
+  --pre-header: #8b949e;
 
-    /* 引用块 */
-    --quote-bg: transparent;
-    --quote-fg: #9ca3af;
-    --quote-border: #3d444d;
+  /* 引用块 */
+  --quote-bg: transparent;
+  --quote-fg: #9ca3af;
+  --quote-border: #3d444d;
 
-    /* 界面铬边 / 控件 */
-    --control-text-color: var(--text-secondary);
-    --control-text-hover-color: var(--font-color);
-    --item-hover-bg-color: var(--hover-color);
-    --item-hover-text-color: var(--font-color);
-    --side-bar-bg-color: var(--sidebar-bg);
-    --window-border: var(--border-color);
-    --active-file-bg-color: var(--active-color);
-    --active-file-text-color: var(--font-color);
-    --active-file-border-color: transparent;
-    --primary-color: var(--accent);
-    --select-text-bg-color: rgba(96, 165, 250, 0.28);
-    --select-text-font-color: var(--font-color);
-    --rawblock-edit-panel-bd: var(--pre-bg);
-    --blink-border-color: var(--accent);
+  /* 界面铬边 / 控件 */
+  --control-text-color: var(--text-secondary);
+  --control-text-hover-color: var(--font-color);
+  --item-hover-bg-color: var(--hover-color);
+  --item-hover-text-color: var(--font-color);
+  --side-bar-bg-color: var(--sidebar-bg);
+  --window-border: var(--border-color);
+  --active-file-bg-color: var(--active-color);
+  --active-file-text-color: var(--font-color);
+  --active-file-border-color: transparent;
+  --primary-color: var(--accent);
+  --select-text-bg-color: rgba(96, 165, 250, 0.28);
+  --select-text-font-color: var(--font-color);
+  --rawblock-edit-panel-bd: var(--pre-bg);
+  --blink-border-color: var(--accent);
 
-    /* 字体排印 */
-    --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", "PingFang SC", "Microsoft YaHei UI",
-        "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
-    --monospace: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 字体排印 */
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei UI", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+  --monospace:
+    "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New",
+    monospace;
 
-    --font-weight: 400;
-    --font-strong: 600;
+  --font-weight: 400;
+  --font-strong: 600;
 
-    /* 阴影 */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
-    --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04);
-    --shadow-input: 0 10px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md:
+    0 8px 28px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  --shadow-input:
+    0 10px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
 
-    /* 滚动条 */
-    --scrollbar-color: rgba(255, 255, 255, 0.14);
-    --scrollbar-hover: rgba(255, 255, 255, 0.28);
+  /* 滚动条 */
+  --scrollbar-color: rgba(255, 255, 255, 0.14);
+  --scrollbar-hover: rgba(255, 255, 255, 0.28);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-    background-color: var(--bg-color);
-    -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family: var(--font-sans);
-    color: var(--font-color);
-    line-height: 1.65;
-    font-weight: var(--font-weight);
-    background-color: var(--bg-color);
+  font-family: var(--font-sans);
+  color: var(--font-color);
+  line-height: 1.65;
+  font-weight: var(--font-weight);
+  background-color: var(--bg-color);
 }
 
 ::selection {
-    background: var(--select-text-bg-color);
-    color: var(--select-text-font-color);
+  background: var(--select-text-bg-color);
+  color: var(--select-text-font-color);
 }
 
 /* =========================================
@@ -115,25 +119,25 @@ body {
    ========================================= */
 
 #write {
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 28px 28px 120px;
-    caret-color: var(--accent);
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 28px 120px;
+  caret-color: var(--accent);
 }
 
 /* 较窄窗口 */
 @media screen and (max-width: 768px) {
-    #write {
-        padding-inline: 20px;
-    }
+  #write {
+    padding-inline: 20px;
+  }
 }
 
 /* 超宽屏：只略微增加宽度 */
 @media screen and (min-width: 1600px) {
-    #write {
-        max-width: 820px;
-    }
+  #write {
+    max-width: 820px;
+  }
 }
 
 /* ----- 标题 ----- */
@@ -144,134 +148,136 @@ body {
 #write h4,
 #write h5,
 #write h6 {
-    font-family: var(--font-sans);
-    font-weight: 600;
-    color: var(--font-color);
-    line-height: 1.3;
-    margin-top: 1.6em;
-    margin-bottom: 0.55em;
-    border: none;
-    letter-spacing: -0.01em;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--font-color);
+  line-height: 1.3;
+  margin-top: 1.6em;
+  margin-bottom: 0.55em;
+  border: none;
+  letter-spacing: -0.01em;
 }
 
 #write h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 0.4em;
-    margin-bottom: 0.85em;
-    letter-spacing: -0.02em;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 0.4em;
+  margin-bottom: 0.85em;
+  letter-spacing: -0.02em;
 }
 
 #write h2 {
-    font-size: 1.875em;
-    margin-top: 30px;
+  font-size: 1.875em;
+  margin-top: 30px;
 }
 
 #write h3 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 #write h4 {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 #write h5,
 #write h6 {
-    font-size: 1.125em;
-    font-weight: 600;
+  font-size: 1.125em;
+  font-weight: 600;
 }
 
 #write p {
-    margin: 0.55em 0;
-    line-height: 1.7;
+  margin: 0.55em 0;
+  line-height: 1.7;
 }
 
 /* ----- 链接 ----- */
 
 #write a {
-    color: var(--accent);
-    text-decoration: none;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 #write a:hover {
-    color: var(--accent-hover);
-    border-bottom: 1px solid var(--accent-hover);
+  color: var(--accent-hover);
+  border-bottom: 1px solid var(--accent-hover);
 }
 
 /* ----- 列表 ----- */
 
 #write ul,
 #write ol {
-    padding-left: 1.35em;
-    margin: 0.55em 0 0.85em;
+  padding-left: 1.35em;
+  margin: 0.55em 0 0.85em;
 }
 
 #write li {
-    margin: 0.28em 0;
+  margin: 0.28em 0;
 }
 
 /* ---------- 任务列表 / 复选框 ---------- */
 .md-task-list-item {
-    list-style: none;
-    position: relative;
+  list-style: none;
+  position: relative;
 }
 
 #write .md-task-list-item > input,
 #write li.md-task-list-item > input[type="checkbox"] {
-    -webkit-appearance: none;
-    appearance: none;
-    display: inline-block;
-    position: absolute;
-    top: 0.45em;
-    left: -1.55em;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    border: 1.5px solid var(--todo-border-color);
-    border-radius: 3px;
-    background: transparent;
-    cursor: pointer;
-    transition: background 0.12s ease, border-color 0.12s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: absolute;
+  top: 0.45em;
+  left: -1.55em;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border: 1.5px solid var(--todo-border-color);
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background 0.12s ease,
+    border-color 0.12s ease;
 }
 
 #write .md-task-list-item > input:focus,
 #write li.md-task-list-item > input[type="checkbox"]:focus {
-    outline: none;
+  outline: none;
 }
 
 #write .md-task-list-item > input[checked],
 #write li.md-task-list-item > input[type="checkbox"]:checked {
-    background: var(--todo-checked-color);
-    border-color: var(--todo-checked-color);
+  background: var(--todo-checked-color);
+  border-color: var(--todo-checked-color);
 }
 
 #write .md-task-list-item > input[checked]::before,
 #write li.md-task-list-item > input[type="checkbox"]:checked::before {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 1px;
-    width: 4px;
-    height: 8px;
-    border: solid #fff;
-    border-width: 0 1.5px 1.5px 0;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
 }
 
 #write .md-task-list-item.task-list-done > p,
 #write .md-task-list-item.task-list-done {
-    color: var(--todo-done-color);
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 255, 255, 0.3);
+  color: var(--todo-done-color);
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 /* ----- 分隔线 ----- */
 
 #write hr {
-    border: none;
-    height: 1px;
-    background: var(--hr-color);
-    margin: 1.5em 0;
+  border: none;
+  height: 1px;
+  background: var(--hr-color);
+  margin: 1.5em 0;
 }
 
 /* =========================================
@@ -279,38 +285,38 @@ body {
    ========================================= */
 
 #write blockquote {
-    margin: 1em 0;
-    padding: 0.15em 0 0.15em 1em;
-    background: transparent;
-    border: none;
-    border-left: 4px solid var(--quote-border);
-    border-radius: 0;
-    color: var(--quote-fg);
-    width: auto;
-    max-width: none;
-    box-sizing: border-box;
+  margin: 1em 0;
+  padding: 0.15em 0 0.15em 1em;
+  background: transparent;
+  border: none;
+  border-left: 4px solid var(--quote-border);
+  border-radius: 0;
+  color: var(--quote-fg);
+  width: auto;
+  max-width: none;
+  box-sizing: border-box;
 }
 
 #write blockquote > :first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #write blockquote > :last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #write blockquote p {
-    margin: 0.35em 0;
-    color: var(--quote-fg);
+  margin: 0.35em 0;
+  color: var(--quote-fg);
 }
 
 #write blockquote strong {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 #write blockquote blockquote {
-    margin: 0.65em 0;
-    border-left-color: #656d76;
+  margin: 0.65em 0;
+  border-left-color: #656d76;
 }
 
 /* =========================================
@@ -319,26 +325,26 @@ body {
 
 #write code,
 #write tt {
-    font-family: var(--monospace);
-    font-size: 0.92em;
-    background: var(--code-bg);
-    color: var(--inline-code-fg);
-    padding: 0.2em 0.4em;
-    margin: 0 0.1em;
-    border-radius: 4px;
-    border: none;
-    word-break: break-word;
+  font-family: var(--monospace);
+  font-size: 0.92em;
+  background: var(--code-bg);
+  color: var(--inline-code-fg);
+  padding: 0.2em 0.4em;
+  margin: 0 0.1em;
+  border-radius: 4px;
+  border: none;
+  word-break: break-word;
 }
 
 #write kbd {
-    font-family: var(--font-sans);
-    font-size: 0.78em;
-    padding: 0.15em 0.45em;
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-color);
-    border-bottom-width: 2px;
-    border-radius: 6px;
-    color: var(--font-color);
+  font-family: var(--font-sans);
+  font-size: 0.78em;
+  padding: 0.15em 0.45em;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  color: var(--font-color);
 }
 
 /* =========================================
@@ -346,199 +352,199 @@ body {
    ========================================= */
 
 .CodeMirror-gutters {
-    border: none;
-    background: transparent;
+  border: none;
+  background: transparent;
 }
 
 .md-fences {
-    font-family: var(--monospace);
-    font-size: 0.9rem;
-    line-height: 1.55;
-    background: var(--pre-bg);
-    color: var(--code-fg);
-    border: 1px solid var(--pre-border);
-    border-radius: 10px;
-    padding: 2.6rem 0.95rem 0.9rem;
-    margin: 0.9em 0;
-    position: relative;
+  font-family: var(--monospace);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  background: var(--pre-bg);
+  color: var(--code-fg);
+  border: 1px solid var(--pre-border);
+  border-radius: 10px;
+  padding: 2.6rem 0.95rem 0.9rem;
+  margin: 0.9em 0;
+  position: relative;
 }
 
 .md-fences .CodeMirror.cm-s-inner {
-    background: transparent;
+  background: transparent;
 }
 
 .md-fences .CodeMirror-linenumber {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
 
 /* 代码块顶栏背景（始终显示） */
 .md-fences::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2.15rem;
-    border-radius: 10px 10px 0 0;
-    pointer-events: none;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.15rem;
+  border-radius: 10px 10px 0 0;
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* 静态语言标签共用样式 */
 .md-fences::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 2.15rem;
-    padding: 0 0.95rem;
-    display: flex;
-    align-items: center;
-    font-family: var(--font-sans);
-    font-size: 0.72rem;
-    font-weight: 500;
-    z-index: 11;
-    pointer-events: none;
-    box-sizing: border-box;
-    opacity: 1;
-    visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.15rem;
+  padding: 0 0.95rem;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  z-index: 11;
+  pointer-events: none;
+  box-sizing: border-box;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* 有语言名时显示语言 */
 .md-fences[lang]:not([lang=""])::before {
-    content: attr(lang);
-    color: var(--pre-header);
+  content: attr(lang);
+  color: var(--pre-header);
 }
 
 /* 无语言名时显示占位提示 */
 .md-fences:not([lang])::before,
 .md-fences[lang=""]::before {
-    content: "代码语言";
-    color: var(--text-muted);
-    font-weight: 400;
+  content: "代码语言";
+  color: var(--text-muted);
+  font-weight: 400;
 }
 
 .md-fences.md-focus::before {
-    opacity: 1 !important;
-    visibility: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .md-fences.md-focus:has(.code-tooltip:focus-within)::before {
-    opacity: 0 !important;
-    visibility: hidden !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 .md-fences .code-tooltip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: auto;
-    right: auto;
-    height: 2.15rem;
-    padding: 0 0.95rem;
-    margin: 0 !important;
-    display: flex !important;
-    align-items: center;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    z-index: 10;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  height: 2.15rem;
+  padding: 0 0.95rem;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .md-fences.md-focus .code-tooltip {
-    visibility: visible !important;
-    pointer-events: auto !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
 }
 
 .md-fences.md-focus .code-tooltip:focus-within {
-    opacity: 1 !important;
-    visibility: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .md-fences:not(.md-focus) .code-tooltip {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  display: none !important;
 }
 
 .md-fences .code-tooltip .ty-input,
 .md-fences .code-tooltip .ty-input:focus {
-    font-family: var(--font-sans);
-    font-size: 0.72rem;
-    font-weight: 500;
-    color: var(--pre-header);
-    line-height: 1;
-    padding: 0;
-    margin: 0 !important;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background: transparent;
-    text-align: left;
-    min-width: 11em;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--pre-header);
+  line-height: 1;
+  padding: 0;
+  margin: 0 !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  text-align: left;
+  min-width: 11em;
 }
 
 /* 编辑空语言名时保持 Typora 输入框占位符可见 */
 .md-fences .code-tooltip .ty-input::placeholder,
 .md-fences .code-tooltip .ty-input::-webkit-input-placeholder {
-    color: var(--text-muted);
-    opacity: 1 !important;
-    font-weight: 400;
+  color: var(--text-muted);
+  opacity: 1 !important;
+  font-weight: 400;
 }
 
 /* 语法高亮 — Dark Plus / 深色 */
 .cm-s-inner .cm-comment,
 .cm-s-inner .cm-meta {
-    color: #8b949e;
+  color: #8b949e;
 }
 
 .cm-s-inner .cm-keyword,
 .cm-s-inner .cm-builtin {
-    color: #ff7b72;
+  color: #ff7b72;
 }
 
 .cm-s-inner .cm-string,
 .cm-s-inner .cm-string-2 {
-    color: #a5d6ff;
+  color: #a5d6ff;
 }
 
 .cm-s-inner .cm-number,
 .cm-s-inner .cm-atom {
-    color: #79c0ff;
+  color: #79c0ff;
 }
 
 .cm-s-inner .cm-def {
-    color: #d2a8ff;
+  color: #d2a8ff;
 }
 
 .cm-s-inner .cm-variable,
 .cm-s-inner .cm-variable-2,
 .cm-s-inner .cm-variable-3 {
-    color: #ffa657;
+  color: #ffa657;
 }
 
 .cm-s-inner .cm-property,
 .cm-s-inner .cm-attribute {
-    color: #79c0ff;
+  color: #79c0ff;
 }
 
 .cm-s-inner .cm-tag {
-    color: #7ee787;
+  color: #7ee787;
 }
 
 .cm-s-inner .cm-operator,
 .cm-s-inner .cm-bracket {
-    color: #e6edf3;
+  color: #e6edf3;
 }
 
 .cm-s-inner .cm-link {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .cm-s-inner .cm-error {
-    color: #f85149;
+  color: #f85149;
 }
 
 /* =========================================
@@ -546,50 +552,50 @@ body {
    ========================================= */
 
 .md-table-fig {
-    width: max-content;
-    min-width: 100%;
-    max-width: max(100%, 55vw);
-    margin: 1em 0 1.25em;
-    border: 1px solid var(--border-color);
+  width: max-content;
+  min-width: 100%;
+  max-width: max(100%, 55vw);
+  margin: 1em 0 1.25em;
+  border: 1px solid var(--border-color);
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1rem;
-    border: none;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  border: none;
 }
 
 table th,
 table td {
-    border: 1px solid var(--border-subtle);
-    padding: 0.55em 0.85em;
-    text-align: left;
-    vertical-align: middle;
-    line-height: 1.55;
-    font-size: 1rem;
+  border: 1px solid var(--border-subtle);
+  padding: 0.55em 0.85em;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 1.55;
+  font-size: 1rem;
 }
 
 table thead th {
-    background: #222;
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    border-bottom: 1px solid var(--border-color);
+  background: #222;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
 }
 
 table tbody tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 table tbody tr:hover td {
-    background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 table img {
-    max-height: 1.35em;
-    width: auto;
-    vertical-align: middle;
+  max-height: 1.35em;
+  width: auto;
+  vertical-align: middle;
 }
 
 /* =========================================
@@ -597,14 +603,14 @@ table img {
    ========================================= */
 
 #write pre.md-meta-block {
-    background: #1a1a1a;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 0.85em 1.1em;
-    font-family: var(--monospace);
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-    margin-bottom: 1.4em;
+  background: #1a1a1a;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.85em 1.1em;
+  font-family: var(--monospace);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.4em;
 }
 
 /* =========================================
@@ -612,23 +618,23 @@ table img {
    ========================================= */
 
 .md-toc {
-    margin: 1em 0;
-    padding: 0.85em 1em;
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-subtle);
-    border-radius: 10px;
+  margin: 1em 0;
+  padding: 0.85em 1em;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
 }
 
 #write img {
-    max-width: 100%;
-    border-radius: 8px;
-    border: 1px solid var(--border-subtle);
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
 }
 
 mark {
-    background: rgba(210, 153, 34, 0.35);
-    color: inherit;
-    border-radius: 2px;
+  background: rgba(210, 153, 34, 0.35);
+  color: inherit;
+  border-radius: 2px;
 }
 
 /* =========================================
@@ -636,17 +642,17 @@ mark {
    ========================================= */
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-color);
-    border-radius: 8px;
+  background: var(--scrollbar-color);
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--scrollbar-hover);
+  background: var(--scrollbar-hover);
 }
 
 /* =========================================
@@ -654,10 +660,10 @@ mark {
    ========================================= */
 
 #typora-sidebar {
-    background: var(--sidebar-bg);
-    border-right: 1px solid var(--border-color);
-    color: var(--sidebar-font-color);
-    font-family: var(--font-sans);
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+  color: var(--sidebar-font-color);
+  font-family: var(--font-sans);
 }
 
 /* =========================================
@@ -670,113 +676,116 @@ mark {
 */
 
 .info-panel-tab-wrapper {
-    position: relative;
-    display: flex !important;
-    align-items: center;
-    justify-content: stretch;
-    gap: 3px;
-    width: auto;
-    height: 36px !important;
-    min-height: 36px !important;
-    margin: 10px 12px 8px !important;
-    padding: 3px !important;
-    background: var(--active-color);
-    border: 1px solid var(--border-subtle);
-    border-radius: 10px;
-    box-sizing: border-box;
-    -webkit-app-region: no-drag;
-    overflow: hidden;
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: stretch;
+  gap: 3px;
+  width: auto;
+  height: 36px !important;
+  min-height: 36px !important;
+  margin: 10px 12px 8px !important;
+  padding: 3px !important;
+  background: var(--active-color);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  box-sizing: border-box;
+  -webkit-app-region: no-drag;
+  overflow: hidden;
 }
 
 .info-panel-tab-wrapper > div[style*="flex"] {
-    display: none !important;
-    width: 0 !important;
-    flex: 0 0 0 !important;
+  display: none !important;
+  width: 0 !important;
+  flex: 0 0 0 !important;
 }
 
 .sidebar-tabs {
-    display: contents !important;
-    border: none;
-    background: transparent;
-    height: auto;
+  display: contents !important;
+  border: none;
+  background: transparent;
+  height: auto;
 }
 
 #info-panel-tab-search,
 #info-panel-tab-search-back {
-    display: none !important;
+  display: none !important;
 }
 
 .ty-show-search .info-panel-tab {
-    display: none !important;
+  display: none !important;
 }
 
 .ty-show-search #info-panel-tab-search,
 .ty-show-search #info-panel-tab-search-back {
-    display: flex !important;
+  display: flex !important;
 }
 
 /* 覆盖 Typora .info-panel-tab 的 margin-top（18px / 原生窗口 12px） */
 .info-panel-tab,
 .native-window .info-panel-tab,
 .os-windows .info-panel-tab {
-    position: relative;
-    z-index: 1;
-    float: none !important;
-    flex: 1 1 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto !important;
-    min-width: 0;
-    height: 30px !important;
-    margin: 0 !important;
-    margin-top: 0 !important;
-    padding: 0 6px !important;
-    border: none;
-    border-radius: 7px;
-    background: transparent;
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    font-weight: 500;
-    line-height: 1 !important;
-    opacity: 1;
-    text-align: center;
-    box-shadow: none;
-    -webkit-app-region: no-drag;
-    transition: color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  z-index: 1;
+  float: none !important;
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  min-width: 0;
+  height: 30px !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 6px !important;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1 !important;
+  opacity: 1;
+  text-align: center;
+  box-shadow: none;
+  -webkit-app-region: no-drag;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .info-panel-tab .info-panel-tab-border {
-    display: none !important;
-    height: 0 !important;
-    background: transparent;
+  display: none !important;
+  height: 0 !important;
+  background: transparent;
 }
 
 .info-panel-tab-title {
-    display: block !important;
-    width: auto;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    padding-bottom: 0 !important;
-    border: none;
-    background: transparent;
-    color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: 1 !important;
-    transform: none !important;
-    bottom: auto !important;
-    position: static !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-app-region: no-drag;
+  display: block !important;
+  width: auto;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-bottom: 0 !important;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1 !important;
+  transform: none !important;
+  bottom: auto !important;
+  position: static !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-app-region: no-drag;
 }
 
 .info-panel-tab:hover {
-    color: var(--font-color);
-    background: rgba(255, 255, 255, 0.06);
+  color: var(--font-color);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .active-tab-files #info-panel-tab-file,
@@ -785,142 +794,144 @@ mark {
 .active-tab-outline #info-panel-tab-outline:hover,
 .ty-show-search #info-panel-tab-search,
 .ty-show-search #info-panel-tab-search:hover {
-    color: var(--font-color);
-    font-weight: 650;
-    background: var(--bg-elevated);
-    border: none;
-    box-shadow:
-        0 1px 2px rgba(0, 0, 0, 0.35),
-        0 0 0 1px rgba(255, 255, 255, 0.04);
+  color: var(--font-color);
+  font-weight: 650;
+  background: var(--bg-elevated);
+  border: none;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 .ty-show-search #info-panel-tab-search-back {
-    color: var(--text-muted);
-    font-weight: 500;
-    background: transparent;
-    box-shadow: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  background: transparent;
+  box-shadow: none;
 }
 
 .ty-show-search #info-panel-tab-search-back:hover {
-    color: var(--font-color);
-    background: rgba(255, 255, 255, 0.06);
+  color: var(--font-color);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 /* 文件列表 */
 .file-list-item {
-    border-bottom: none;
-    border-radius: 8px;
-    margin: 1px 6px;
+  border-bottom: none;
+  border-radius: 8px;
+  margin: 1px 6px;
 }
 
 .file-list-item:hover {
-    background: var(--hover-color);
+  background: var(--hover-color);
 }
 
 .file-list-item.active {
-    background: var(--active-color);
-    color: var(--font-color);
+  background: var(--active-color);
+  color: var(--font-color);
 }
 
 .file-list-item-file-name {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .file-list-item-summary {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 /* 文件树
    Typora 默认用 display:table + overflow-x:auto，长文件名会撑开并横向滚动，
    导致省略号失效。改为裁切的列布局。 */
 #file-library {
-    width: 100%;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
+  width: 100%;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
 }
 
 .use-file-tree-style #file-library-tree {
-    display: block !important;
-    width: 100%;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
+  display: block !important;
+  width: 100%;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
 }
 
 /* 列表模式：隐藏文件树，只显示文档列表 */
 #typora-sidebar:not(.use-file-tree-style) #file-library-tree {
-    display: none !important;
+  display: none !important;
 }
 
 #file-library {
-    overflow-y: auto !important;
+  overflow-y: auto !important;
 }
 
 .active-tab-files .sidebar-content,
 #sidebar-content:hover #file-library,
 .sidebar-content {
-    overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 
 .file-tree-node,
 .file-library-node {
-    max-width: 100%;
-    box-sizing: border-box;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .file-node-content {
-    display: flex !important;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    overflow: hidden;
-    color: var(--sidebar-font-color);
-    font-size: 14px;
-    border-radius: 6px;
-    padding: 3px 8px 3px 6px;
-    padding-right: 8px;
-    box-sizing: border-box;
-    white-space: nowrap;
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--sidebar-font-color);
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 3px 8px 3px 6px;
+  padding-right: 8px;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .file-node-content .file-node-icon,
 .file-node-content .file-node-open-state {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .fa-caret-down:before {
-    content: "\f107"; /* 向下箭头 */
+  content: "\f107"; /* 向下箭头 */
 }
 
 .fa-caret-right:before {
-    content: "\f105"; /* 向右箭头 */
+  content: "\f105"; /* 向右箭头 */
 }
 
 .fa-folder:before {
-    content: "\f114"; /* 空心文件夹图标 */
+  content: "\f114"; /* 空心文件夹图标 */
 }
 
-.file-node-expanded>.file-node-content .fa-caret-down {
-    margin-left: 0;
+.file-node-expanded > .file-node-content .fa-caret-down {
+  margin-left: 0;
 }
 
 /* 展开的文件夹使用实心文件夹图标 */
-.file-node-expanded>.file-node-content .fa-folder:before {
-    content: "\f115"
+.file-node-expanded > .file-node-content .fa-folder:before {
+  content: "\f115";
 }
 
 .file-node-open-state {
-    padding: 2px;
-    margin-right: 8px;
+  padding: 2px;
+  margin-right: 8px;
 }
 
 /* 文件节点不需要展开箭头，移除 Typora 保留的空占位 */
-.file-library-node.file-library-file-node > .file-node-content > .file-node-open-state {
-    display: none !important;
+.file-library-node.file-library-file-node
+  > .file-node-content
+  > .file-node-open-state {
+  display: none !important;
 }
 
 /*
@@ -930,160 +941,177 @@ mark {
  * 两种图标共用固定 16px 槽位，切换时文字不会跳动。
  * 悬停时用 inline-flex（不要用 inline-block），箭头才能居中。
  */
-.file-library-node[data-is-directory="true"] > .file-node-content > .file-node-open-state,
+.file-library-node[data-is-directory="true"]
+  > .file-node-content
+  > .file-node-open-state,
 .file-library-node > .file-node-content > .file-node-icon {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 16px !important;
-    width: 16px !important;
-    min-width: 16px !important;
-    max-width: 16px !important;
-    height: 16px;
-    margin: 0 8px 0 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-    line-height: 1;
-    text-align: center;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 16px !important;
+  width: 16px !important;
+  min-width: 16px !important;
+  max-width: 16px !important;
+  height: 16px;
+  margin: 0 8px 0 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  line-height: 1;
+  text-align: center;
 }
 
 /* 在共用图标槽内居中 Font Awesome 字形 */
-.file-library-node[data-is-directory="true"] > .file-node-content > .file-node-open-state .fa,
-.file-library-node[data-is-directory="true"] > .file-node-content > .file-node-icon.fa-folder:before {
-    width: 100%;
-    text-align: center;
-    line-height: 1;
+.file-library-node[data-is-directory="true"]
+  > .file-node-content
+  > .file-node-open-state
+  .fa,
+.file-library-node[data-is-directory="true"]
+  > .file-node-content
+  > .file-node-icon.fa-folder:before {
+  width: 100%;
+  text-align: center;
+  line-height: 1;
 }
 
 /* 默认隐藏箭头，只显示文件夹图标 */
-.file-library-node[data-is-directory="true"] > .file-node-content > .file-node-open-state {
-    display: none !important;
+.file-library-node[data-is-directory="true"]
+  > .file-node-content
+  > .file-node-open-state {
+  display: none !important;
 }
 
 /* 悬停：在同一槽位显示箭头 */
-.file-library-node[data-is-directory="true"]:not([data-has-sub="false"]) > .file-node-content:hover > .file-node-open-state {
-    display: inline-flex !important;
+.file-library-node[data-is-directory="true"]:not([data-has-sub="false"])
+  > .file-node-content:hover
+  > .file-node-open-state {
+  display: inline-flex !important;
 }
 
 /* 悬停：隐藏文件夹图标（根节点除外） */
-.file-library-node:not(.file-node-root)[data-is-directory="true"]:not([data-has-sub="false"]) > .file-node-content:hover > .file-node-icon.fa-folder {
-    display: none !important;
+.file-library-node:not(.file-node-root)[data-is-directory="true"]:not(
+    [data-has-sub="false"]
+  )
+  > .file-node-content:hover
+  > .file-node-icon.fa-folder {
+  display: none !important;
 }
 
 /* 没有可显示子项的目录使用变淡的空心文件夹图标 */
-.file-library-node:not(.file-node-root)[data-is-directory="true"][data-has-sub="false"]
-    > .file-node-content
-    > .file-node-icon.fa-folder:before {
-    content: "\f114";
-    opacity: 0.5;
+.file-library-node:not(
+    .file-node-root
+  )[data-is-directory="true"][data-has-sub="false"]
+  > .file-node-content
+  > .file-node-icon.fa-folder:before {
+  content: "\f114";
+  opacity: 0.5;
 }
 
 .file-node-title,
 .allow-file-tree-scroll .file-node-title,
 .file-node-content > .file-node-title {
-    display: block !important;
-    flex: 1 1 0% !important;
-    width: 0 !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
-    word-break: keep-all;
+  display: block !important;
+  flex: 1 1 0% !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  word-break: keep-all;
 }
 
 .file-node-title-name-part {
-    display: inline !important;
+  display: inline !important;
 }
 
 .file-node-icon {
-    opacity: 0.65;
-    margin-right: 8px;
+  opacity: 0.65;
+  margin-right: 8px;
 }
 
 .file-node-title-ext-part {
-    display: none !important;
+  display: none !important;
 }
 
 /* 清除 Typora 节点背景，仅高亮鼠标所在行 */
 .file-tree-node > .file-node-background,
 .file-tree-node:not(.file-node-root):hover > .file-node-background,
 .file-tree-node.active > .file-node-background {
-    background: transparent;
-    border: none;
-    box-shadow: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .file-tree-node > .file-node-content:hover {
-    background: var(--hover-color);
+  background: var(--hover-color);
 }
 
 .file-library-node.file-library-file-node.active > .file-node-content {
-    background: var(--active-color);
-    color: var(--font-color);
+  background: var(--active-color);
+  color: var(--font-color);
 }
 
 .file-library-node.file-library-file-node.active > .file-node-content:hover {
-    background: var(--hover-color);
+  background: var(--hover-color);
 }
 
 #file-library-tree > .file-tree-node.file-node-root > .file-node-content {
-    letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 }
 
 #file-library-tree > .file-tree-node.file-node-root > .file-node-content:hover {
-    background: transparent;
+  background: transparent;
 }
 
 /* 大纲 */
 .outline-content ul {
-    list-style: none;
+  list-style: none;
 }
 
 .outline-content li ul {
-    margin-left: 14px !important;
+  margin-left: 14px !important;
 }
 
 .outline-item {
-    color: var(--sidebar-font-color);
-    font-size: 0.9rem;
-    border-radius: 6px;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    padding-right: 8px !important;
+  color: var(--sidebar-font-color);
+  font-size: 0.9rem;
+  border-radius: 6px;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  padding-right: 8px !important;
 }
 
 .outline-item:hover {
-    background: var(--hover-color);
+  background: var(--hover-color);
 }
 
 .outline-item-active,
 .outline-item-active:hover {
-    background: var(--active-color);
-    color: var(--font-color);
+  background: var(--active-color);
+  color: var(--font-color);
 }
 
 .outline-label:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* 侧边栏底栏 */
 #ty-sidebar-footer {
-    background: var(--sidebar-bg);
-    border-top: 1px solid var(--border-subtle);
+  background: var(--sidebar-bg);
+  border-top: 1px solid var(--border-subtle);
 }
 
 /* 侧边栏搜索 */
 #file-library-search-input {
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    color: var(--font-color);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--font-color);
 }
 
 #file-library-search-input:focus {
-    border-color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* =========================================
@@ -1091,49 +1119,49 @@ mark {
    ========================================= */
 
 footer.ty-footer {
-    background: transparent;
-    border-top: none;
-    color: var(--text-muted);
+  background: transparent;
+  border-top: none;
+  color: var(--text-muted);
 }
 
 /* 快速打开 / 搜索面板 */
 #md-searchpanel {
-    background: rgba(28, 28, 28, 0.94);
-    backdrop-filter: blur(16px);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    box-shadow: var(--shadow-md);
+  background: rgba(28, 28, 28, 0.94);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
 }
 
 #md-searchpanel input {
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    color: var(--font-color);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--font-color);
 }
 
 /* 右键菜单 */
 #context-menu,
 .dropdown-menu,
 .auto-suggest-container {
-    background: rgba(28, 28, 28, 0.96);
-    backdrop-filter: blur(18px);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    box-shadow: var(--shadow-md);
-    padding: 4px;
-    color: var(--font-color);
+  background: rgba(28, 28, 28, 0.96);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  padding: 4px;
+  color: var(--font-color);
 }
 
 .dropdown-menu > li > a,
 #context-menu li a {
-    border-radius: 6px;
-    color: var(--font-color);
+  border-radius: 6px;
+  color: var(--font-color);
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > li > a:hover {
-    background: var(--hover-color);
+  background: var(--hover-color);
 }
 
 /* =========================================
@@ -1141,63 +1169,63 @@ footer.ty-footer {
    ========================================= */
 
 .unibody-window #megamenu-menu-sidebar {
-    background: var(--sidebar-bg);
+  background: var(--sidebar-bg);
 }
 
 .unibody-window .megamenu-menu-panel {
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--bg-elevated);
 }
 
 .unibody-window .megamenu-menu-panel .long-btn {
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    background: var(--hover-color);
-    color: var(--font-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--hover-color);
+  color: var(--font-color);
 }
 
 .unibody-window .megamenu-menu-panel .long-btn:hover {
-    border-color: var(--accent);
-    background: var(--accent-soft);
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 /* CodeMirror 用 border-left 画光标（默认黑色）。
    需要比 Typora/CodeMirror 默认更高的优先级。 */
 .CodeMirror div.CodeMirror-cursor {
-    border-left: 2px solid var(--accent);
+  border-left: 2px solid var(--accent);
 }
 
 .md-fences,
 .md-fences .CodeMirror,
 .md-fences .CodeMirror textarea {
-    caret-color: var(--accent);
+  caret-color: var(--accent);
 }
 
 /* 编辑区与通用控件 */
 .md-rawblock-control {
-    background: var(--pre-bg);
+  background: var(--pre-bg);
 }
 
 .content {
-    background: var(--bg-color);
+  background: var(--bg-color);
 }
 
 .popover {
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-md);
-    background: var(--bg-elevated);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  background: var(--bg-elevated);
 }
 
 .btn-primary {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #0d1117;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0d1117;
 }
 
 #toggle-sourceview-btn {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 /* =========================================
@@ -1205,156 +1233,156 @@ footer.ty-footer {
    ========================================= */
 
 .ty-editor-toolbar {
-    background: rgba(28, 28, 28, 0.94);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 18px;
-    color: #e8e8e8;
-    --text-color: #e8e8e8;
-    --bg-color: #1c1c1c;
-    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45));
-    backdrop-filter: blur(16px) saturate(1.2);
-    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  background: rgba(28, 28, 28, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  color: #e8e8e8;
+  --text-color: #e8e8e8;
+  --bg-color: #1c1c1c;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45));
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
 }
 
 .ty-editor-toolbar-inner {
-    gap: 2px;
-    padding: 4px 6px;
+  gap: 2px;
+  padding: 4px 6px;
 }
 
 .ty-editor-toolbar-btn {
-    color: #d4d4d4;
-    opacity: 0.88;
-    background: transparent;
-    border-radius: 8px;
+  color: #d4d4d4;
+  opacity: 0.88;
+  background: transparent;
+  border-radius: 8px;
 }
 
 .ty-editor-toolbar-btn .ty-icon,
 .ty-editor-toolbar-btn .fa,
 .ty-editor-toolbar-btn i {
-    color: inherit;
-    opacity: 1;
+  color: inherit;
+  opacity: 1;
 }
 
 .ty-editor-toolbar-btn:hover,
 .ty-editor-toolbar-btn.hover {
-    color: #ffffff;
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .ty-editor-toolbar-btn.active {
-    color: #ffffff;
-    opacity: 1;
-    background: rgba(96, 165, 250, 0.22);
-    box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.35);
+  color: #ffffff;
+  opacity: 1;
+  background: rgba(96, 165, 250, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.35);
 }
 
 .ty-editor-toolbar-select {
-    color: #e8e8e8;
-    opacity: 1;
+  color: #e8e8e8;
+  opacity: 1;
 }
 
 .ty-editor-toolbar-select .ty-editor-toolbar-select-label {
-    color: inherit;
-    opacity: 1;
+  color: inherit;
+  opacity: 1;
 }
 
 .ty-editor-toolbar-select .fa {
-    color: inherit;
-    opacity: 0.7;
+  color: inherit;
+  opacity: 0.7;
 }
 
 .ty-editor-toolbar-select.active {
-    color: #ffffff;
-    background: rgba(96, 165, 250, 0.22);
+  color: #ffffff;
+  background: rgba(96, 165, 250, 0.22);
 }
 
 .ty-editor-toolbar-divider {
-    background: rgba(255, 255, 255, 0.14);
-    opacity: 1;
+  background: rgba(255, 255, 255, 0.14);
+  opacity: 1;
 }
 
 .ty-editor-toolbar-hint-text {
-    color: #e8e8e8;
-    opacity: 0.9;
+  color: #e8e8e8;
+  opacity: 0.9;
 }
 
 .ty-editor-toolbar-hint-close {
-    color: #c4c4c4;
-    opacity: 0.85;
+  color: #c4c4c4;
+  opacity: 0.85;
 }
 
 .ty-editor-toolbar-hint-close:hover {
-    color: #ffffff;
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* 工具栏下拉菜单 */
 .ty-editor-toolbar-menu {
-    background: rgba(28, 28, 28, 0.96);
-    color: #e8e8e8;
-    --text-color: #e8e8e8;
-    --bg-color: #1c1c1c;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
-    filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.5));
-    backdrop-filter: blur(18px) saturate(1.2);
-    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  background: rgba(28, 28, 28, 0.96);
+  color: #e8e8e8;
+  --text-color: #e8e8e8;
+  --bg-color: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.5));
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
 }
 
 .ty-editor-toolbar-menu-item {
-    color: #d4d4d4;
-    border-radius: 7px;
+  color: #d4d4d4;
+  border-radius: 7px;
 }
 
 .ty-editor-toolbar-menu-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
 }
 
 .ty-editor-toolbar-menu-item.active {
-    background: rgba(96, 165, 250, 0.16);
-    color: #93c5fd;
+  background: rgba(96, 165, 250, 0.16);
+  color: #93c5fd;
 }
 
 .ty-editor-toolbar-menu-item .tmi-icon,
 .ty-editor-toolbar-menu-item .tmi-label,
 .ty-editor-toolbar-menu-item .tmi-extra,
 .ty-editor-toolbar-menu-item .tmi-check {
-    color: inherit;
+  color: inherit;
 }
 
 .ty-editor-toolbar-menu-item .tmi-extra {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .ty-editor-toolbar-menu-item .tmi-icon {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .ty-editor-toolbar-menu-divider {
-    background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .ty-editor-toolbar-tooltip {
-    background: #2a2a2a;
-    color: #f5f5f5;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: #2a2a2a;
+  color: #f5f5f5;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* 打印与图表 */
 @media print {
-    html,
-    body,
-    #write {
-        background: #fff;
-        color: #111;
-    }
+  html,
+  body,
+  #write {
+    background: #fff;
+    color: #111;
+  }
 }
 
 .md-diagram-panel-preview {
-    background: #ffffff;
+  background: #ffffff;
 }
