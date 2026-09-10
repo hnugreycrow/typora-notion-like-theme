@@ -659,7 +659,6 @@ table tbody tr:hover td {
 }
 
 table img {
-  max-height: 1.35em;
   width: auto;
   vertical-align: middle;
 }
