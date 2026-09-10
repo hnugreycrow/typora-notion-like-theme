@@ -34,6 +34,7 @@
   --todo-checked-color: #1890ff;
   --todo-border-color: #5a5a5a;
   --todo-done-color: #6b6b6b;
+  --strong-color: #c4b5fd;
 
   /* Diff 增删色 */
   --diff-add: #3fb950;
@@ -190,6 +191,11 @@ body {
   line-height: 1.7;
 }
 
+#write strong {
+  color: var(--strong-color);
+  font-weight: 600;
+}
+
 /* ----- 链接 ----- */
 
 #write a {
@@ -311,7 +317,7 @@ body {
 }
 
 #write blockquote strong {
-  color: var(--text-secondary);
+  color: var(--strong-color);
 }
 
 #write blockquote blockquote {
@@ -1373,16 +1379,7 @@ footer.ty-footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* 打印与图表 */
-@media print {
-  html,
-  body,
-  #write {
-    background: #fff;
-    color: #111;
-  }
-}
-
+/* 图表 */
 .md-diagram-panel-preview {
   background: #ffffff;
 }
